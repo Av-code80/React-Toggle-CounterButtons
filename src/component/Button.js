@@ -27,7 +27,7 @@ const Button = ({ buttonPlus, buttonMinus, buttonReset, counting }) => {
               onClick={handleToggling}
               className={styles.toggle}
             >
-              {toggled ? "COUNTER HIDDEN" : "COUNTER SHOWN"}
+              {toggled ? "TOGGLE COUNTER" : "SHOW COUNTER"}
             </button>
           </span>
           <button
