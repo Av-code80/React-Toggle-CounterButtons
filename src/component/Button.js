@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import styles from "./Button.module.css"
-
+import imgReact from "./imgReact.jpeg"
 
 const Button = ({ buttonPlus, buttonMinus, buttonReset, counting }) => {
   const [toggled, setToggled] = useState(true) // for managing toggle
@@ -19,6 +19,16 @@ const Button = ({ buttonPlus, buttonMinus, buttonReset, counting }) => {
               <div>Number : {counting}</div>
             </span>
           </div>
+        )}
+
+        {!toggled && (
+          <article>
+            <img
+              src={imgReact}
+              className={styles.toggledLogo}
+              alt="React Logo"
+            />
+          </article>
         )}
         <div>
           <span className={styles.wrapperToggle}>
@@ -47,11 +57,11 @@ const Button = ({ buttonPlus, buttonMinus, buttonReset, counting }) => {
           </button>
         </div>
         <button onClick={() => buttonReset()} className={styles.resetButton}>
-         {toggled ? "RESET" : "IN PROCESS..."}
+          {toggled ? "RESET" : "IN PROCESS..."}
         </button>
       </div>
     </>
-  )
+  );
 }
 
 export default Button
