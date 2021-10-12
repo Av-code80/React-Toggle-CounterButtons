@@ -2,7 +2,6 @@ import React from 'react'
 import styles from './MainHeader.module.css'
 
 const MainHeader = ({headerCounting}) => {
-  //  const [cart, setCart] = useState(0);
 
     return (
       <>

@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
-import './App.css';
 import Button from './component/Button';
 import MainHader from './component/MainHeader';
 import Footer from './component/Footer';
+import "./App.css";
 
 const App = () => {
 const [ count, setCount ] = useState(0)
@@ -21,8 +21,6 @@ const [ count, setCount ] = useState(0)
    
     setCount(0)
   }
-
-
 
   return (
     <div className="App">
