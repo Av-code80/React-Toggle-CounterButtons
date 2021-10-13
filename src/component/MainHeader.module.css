@@ -19,3 +19,8 @@
     border-radius: .2em;
 }
 
+.headerButton .faBars {
+  font-size: 2rem;
+  float: left;
+  transform: translateY(40%);
+}
