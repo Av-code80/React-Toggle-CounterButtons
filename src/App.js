@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Button from "./component/Button";
+import MainButton from "./component/MainButton";
 import MainHader from "./component/MainHeader";
 import Footer from "./component/Footer";
 import "./App.css";
@@ -25,7 +25,7 @@ const App = () => {
   return (
     <div className="App">
       <MainHader headerCounting={count} />
-      <Button
+      <MainButton
         buttonMinus={handleButtonMinus}
         buttonPlus={handleButtonPlus}
         buttonReset={handleButtonReset}

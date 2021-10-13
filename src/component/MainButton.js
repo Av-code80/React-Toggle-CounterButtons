@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import styles from "./Button.module.css";
+import styles from "./MainButton.module.css";
 import imgReact from "./imgReact.jpeg";
 
-const Button = ({ buttonPlus, buttonMinus, buttonReset, counting }) => {
+const MainButton = ({ buttonPlus, buttonMinus, buttonReset, counting }) => {
   const [toggled, setToggled] = useState(true); // for managing toggle
 
   const handleToggling = () => {
@@ -67,4 +67,4 @@ const Button = ({ buttonPlus, buttonMinus, buttonReset, counting }) => {
   );
 };
 
-export default Button;
+export default MainButton;

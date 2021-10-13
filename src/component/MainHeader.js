@@ -8,7 +8,7 @@ import styles from "./MainHeader.module.css";
 const MainHeader = ({ headerCounting }) => {
   const [headerToggled, setHeaderToggled] = useState(false);
 
-  const handlerHeader = () => {
+  const handlerHeaderToggle = () => {
     setHeaderToggled((toggled) => !toggled);
   };
 
@@ -19,7 +19,7 @@ const MainHeader = ({ headerCounting }) => {
         ${headerToggled ? styles.headerColorChanged : ""}`}
       >
         <IconContext.Provider value={{ color: "#ffffff" }}>
-          <FaBars className={styles.faBars} onClick={handlerHeader} />
+          <FaBars className={styles.faBars} onClick={handlerHeaderToggle} />
         </IconContext.Provider>
         <h1>{!headerToggled ? "React Counter Project" : "Counter Header"}</h1>
         <span className={styles.cart}>{headerCounting}</span>
