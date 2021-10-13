@@ -43,6 +43,21 @@
   background-color:rgb(59, 85, 54);
 }
 
+.black{
+   font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.8rem 1rem;
+  background-color: rgba(25, 26, 25, 0.68);
+  color: #fff;
+  border: 1px solid #8e0d3a;
+  text-transform: uppercase;
+  padding: 2.1em;
+  margin: 1em;
+  border-radius: .5em;
+}
+
+
 .headerButton{
     background-color:rgba(19, 69, 198, 0.92);
     color: #fff;
@@ -94,3 +109,4 @@
   height: 40%;
   margin-bottom: 1em;
 }
+

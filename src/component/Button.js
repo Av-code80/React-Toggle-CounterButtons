@@ -1,13 +1,13 @@
-import React, { useState } from "react"
-import styles from "./Button.module.css"
-import imgReact from "./imgReact.jpeg"
+import React, { useState } from "react";
+import styles from "./Button.module.css";
+import imgReact from "./imgReact.jpeg";
 
 const Button = ({ buttonPlus, buttonMinus, buttonReset, counting }) => {
-  const [toggled, setToggled] = useState(true) // for managing toggle
+  const [toggled, setToggled] = useState(true); // for managing toggle
 
   const handleToggling = () => {
-    setToggled((toggled) => !toggled)
-  }
+    setToggled((toggled) => !toggled);
+  };
 
   return (
     <>
@@ -56,12 +56,15 @@ const Button = ({ buttonPlus, buttonMinus, buttonReset, counting }) => {
             -
           </button>
         </div>
-        <button onClick={() => buttonReset()} className={styles.resetButton}>
+        <button
+          onClick={() => buttonReset()}
+          className={`${styles.resetButton} ${!toggled ? styles.black : ""}`}
+        >
           {toggled ? "RESET" : "IN PROCESS..."}
         </button>
       </div>
     </>
   );
-}
+};
 
-export default Button
+export default Button;
