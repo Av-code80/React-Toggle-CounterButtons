@@ -10,7 +10,7 @@
 }
 
 .cart{
-   transform: translate(-40%, -100%);
+   transform: translate(-40%, -110%);
     font-size: 2em;
     background-color: rgb(152, 24, 24);
     border: 2px solid red;

@@ -9,12 +9,13 @@ const [ count, setCount ] = useState(0)
 
   const handleButtonMinus = () => {
 
-    setCount(count - 1)  
+    if (count <= -2) return
+    setCount(count -1)
   }
 
   const handleButtonPlus = () => {
-    
-    setCount(count + 1)
+    if (count >= 10) return
+    setCount(count + 1) 
   }
 
   const handleButtonReset = () => {
@@ -36,4 +37,4 @@ const [ count, setCount ] = useState(0)
   );
 }
 
-export default App;
+export default App
